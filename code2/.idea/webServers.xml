@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="e497be2c-6eba-49d4-9125-4281d160473f" name="hpc_nyu" url="http://zw2655@greene.hpc.nyu.edu">
+        <fileTransfer rootFolder="/scratch/zw2655" accessType="SFTP" host="greene.hpc.nyu.edu" port="22" sshConfigId="59204de6-7c6c-4f9a-abba-879ce829c5d7" sshConfig="zw2655@greene.hpc.nyu.edu">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
