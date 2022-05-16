@@ -237,14 +237,14 @@ class Block0(nn.Module):
             self.ffn_norm.bias.copy_(np2th(weights[pjoin(ROOT, MLP_NORM, "bias")]))
 
 
-class Block1(nn.Module):
+class Block(nn.Module):
     """
     Block1 test - bottleneck: (out = partial bottleneck, single CNN)
     x + h + out
     """
 
     def __init__(self, config, vis):
-        super(Block1, self).__init__()
+        super(Block, self).__init__()
         self.config = config
         self.hidden_size = config.hidden_size
         self.attention_norm = LayerNorm(config.hidden_size, eps=1e-6)
@@ -468,13 +468,13 @@ class Block3(nn.Module):
             self.ffn_norm.weight.copy_(np2th(weights[pjoin(ROOT, MLP_NORM, "scale")]))
             self.ffn_norm.bias.copy_(np2th(weights[pjoin(ROOT, MLP_NORM, "bias")]))
 
-class Block(nn.Module):
+class Block4(nn.Module):
     """
     Block4 test - bottleneck: (out =  partial Bottleneck, 1 CNN included)
     x + out ( double augment)
     """
     def __init__(self, config, vis):
-        super(Block, self).__init__()
+        super(Block4, self).__init__()
         self.config = config
         self.hidden_size = config.hidden_size
         self.attention_norm = LayerNorm(config.hidden_size, eps=1e-6)
